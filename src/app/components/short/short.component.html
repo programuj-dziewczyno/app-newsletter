@@ -1,0 +1,18 @@
+<article [id]="note.article_link">
+  <header>
+    <h2><a [href]="note.article_link">{{ note.title }}</a></h2>
+    <time [dateTime]="note.date">{{ note.date | formatDate: { format: DateFormatConstant.DATE_FORMAT_DOT_REVERT } }}</time>
+  </header>
+  <figure property="image">
+    <a [href]="note.article_link">
+      <img [src]="'assets/notes-images/' + note.img_link" alt="" />
+      <figcaption>{{ note.img_caption }}</figcaption>
+    </a>
+  </figure>
+  <p>
+    <strong><p>{{ note.lead }}</p></strong>
+  </p>
+  <p>
+    <a [href]="note.article_link">Czytaj więcej...</a>
+  </p>
+</article>

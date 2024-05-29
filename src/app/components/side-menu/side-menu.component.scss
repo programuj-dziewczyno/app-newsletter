@@ -1,0 +1,19 @@
+.link-list {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid blue;
+  color: blue;
+  padding: 0;
+  line-height: 1.15;
+}
+
+.clicked {
+  border-bottom: 1px solid purple;
+  color: purple;
+}

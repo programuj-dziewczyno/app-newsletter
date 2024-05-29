@@ -1,0 +1,8 @@
+<nav *ngIf="!getDate(); else navLink"><h1>Newsletter grupy "Programuj, Dziewczyno!"</h1></nav>
+<ng-template #navLink><nav><h1><a [href]="''">Newsletter grupy "Programuj, Dziewczyno!" - {{ getDate() }}</a></h1></nav></ng-template>
+<div class="info-container">
+  <time [dateTime]="date$ | async">{{ date$ | async | formatDate: { format: DateFormatConstant.DATE_TIME_DISPLAY_FORMAT } }}</time>
+  <address>Polska</address>
+</div>
+<hr>
+<hr>
